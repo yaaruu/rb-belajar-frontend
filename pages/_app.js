@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <div>
+        <Navbar/>
+        <Component {...pageProps} />
+      </div>
+    </>
+  );
 }
 
 export default MyApp
